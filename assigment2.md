@@ -1,5 +1,6 @@
 ### Assignment2
-Bank ATM Operations
+## Bank ATM Operations.
+
 Objective: Create a simulation of an ATM where the user needs to enter a PIN to access their account.
 
 Inputs:
