@@ -1,5 +1,5 @@
 ### Assignment1
-### 1. Temperature Converter.
+## Temperature Converter.
    
 Objective: Create a program that can convert temperatures between Fahrenheit, Celsius, and Kelvin.
 
