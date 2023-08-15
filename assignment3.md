@@ -9,22 +9,22 @@ Hint:
 Use the startswith() string method to check if a line begins with "ERROR".
 Employ file handling operations to read from 'system.log' and write to 'error.log'.
 
-'''
+```
 def find_errors():
-    # Open the input log file for reading and the output error file for writing
-    with open('system.log', 'r') as input_file, open('error.log', 'w') as output_file:
-        error_count = 0  # Counter to keep track of the number of errors
-        
+    input_file_path = 'system.log'
+    output_file_path = 'error.log'
+    
+    total_errors = 0
+    
+    with open(input_file_path, 'r') as input_file, open(output_file_path, 'w') as output_file:
         for line in input_file:
             if line.startswith("ERROR"):
-                # Write the error line to the error.log file
                 output_file.write(line)
-                error_count += 1
-        
-        # Print the total number of errors detected
-        print(f"Total number of errors detected: {error_count}")
+                total_errors += 1
+    
+    print(f"Total errors detected: {total_errors}")
 
-# Call the function to start the log analysis
+# Call the function to start processing
 find_errors()
 
-'''
+```
